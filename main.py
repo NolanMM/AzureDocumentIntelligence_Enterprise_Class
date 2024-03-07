@@ -10,7 +10,7 @@ credential = AzureKeyCredential(key)
 client = FormRecognizerClient(endpoint, credential)
 
 # Replace 'document_url' with the URL of the document you want to analyze
-document_url = "Review-Midterm 8.pdf"
+document_url = "https://github.com/NolanMM/AzureDocumentIntelligence_Enterprise_Class/blob/ac4a435a87b65d90dc433a50d87f0b5517055aaf/Review-Midterm%208.pdf"
 
 # Submit the document for analysis
 poller = client.begin_recognize_content_from_url(document_url)
